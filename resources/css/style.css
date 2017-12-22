@@ -1,0 +1,74 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+  font-family: helvetica;
+  line-height: 1.4;
+}
+
+body {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-container {
+  display: flex;
+  width: 960px;
+  border: 1px solid red;
+}
+
+.ccontainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+/* banner */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30rem;
+  background-image: url("../img/banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .site-container {
+  flex-direction: column;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  margin: 1rem 0 10rem 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+header img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+header nav {
+  margin: 1rem;
+}
+
+header nav span {
+  margin: 0 1rem;
+}
