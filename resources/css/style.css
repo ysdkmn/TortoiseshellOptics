@@ -92,7 +92,7 @@ header nav span {
   padding: 1.5rem 5rem;
 }
 
-/* icons */
+/* Service icons */
 
 .icon.site-container {
   justify-content: center;
@@ -116,4 +116,37 @@ header nav span {
 
 .icon span {
   text-align: center;
+}
+
+/* description containers */
+
+.description {
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.description .ccontainer {
+  width: 35%;
+  margin: 0 2.5%;
+}
+
+.description span {
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: cadetblue;
+}
+
+/* footer */
+
+footer {
+  padding: 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
 }
