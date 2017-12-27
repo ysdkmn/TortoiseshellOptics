@@ -16,13 +16,11 @@ body {
 .site-container {
   display: flex;
   width: 960px;
-  border: 1px solid red;
 }
 
 .ccontainer {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 /* banner */
