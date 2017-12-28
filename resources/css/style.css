@@ -63,6 +63,14 @@ header img {
   margin-right: 1rem;
 }
 
+/* nav bar for mobile dispaly */
+
+.mobile-nav {
+  display: none;
+}
+
+/* general nav style */
+
 header nav {
   margin: 1rem;
 }
@@ -77,6 +85,7 @@ header nav span {
   position: relative;
   display: flex;
   justify-content: flex-end;
+  : 1px solid red;
 }
 
 .banner-text span {
@@ -114,6 +123,7 @@ header nav span {
 
 .icon span {
   text-align: center;
+  line-height: 1.2;
 }
 
 /* description containers */
@@ -152,6 +162,7 @@ footer img {
 /* tablet (width: 1024px) */
 
 @media only screen and (max-width:1024px) {
+  /* adjust banner and header dimensions */
   .banner {
     height: 22rem;
   }
@@ -161,6 +172,7 @@ footer img {
   header {
     margin: 0 0 5rem 0;
   }
+  /* move banner text to within site container and adjust dimensions */
   .banner-text span {
     right: 2rem;
     font-size: 1.33rem;
@@ -169,3 +181,71 @@ footer img {
 }
 
 /* mobile (width: 470px) */
+
+@media only screen and (max-width:470px) {
+  /* adjust banner and header dimensions */
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+  header {
+    margin-bottom: 9rem;
+  }
+  /* replace nav bar items with menu item */
+  .default-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  /* expand banner text to full screen and shrink content */
+  .banner-text {
+    width: 100%;
+    justify-content: center;
+  }
+  .banner-text span {
+    width: inherit;
+    position: static;
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  /* change flow of icon items to column and adjust dimensions */
+  .icon.site-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+  }
+  .icon .ccontainer {
+    height: auto;
+    margin: 0;
+    font-size: 0.77rem
+  }
+  .icon img, .icon span {
+    padding: 0.77rem 0;
+  }
+  /* change flow of description items to column and adjust dimensions */
+  .description.site-container {
+    flex-direction: column;
+  }
+  .description .ccontainer {
+    width: inherit;
+    margin: 0;
+    padding-bottom: 4rem;
+  }
+  .description span {
+    width: inherit;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  .description p {
+    font-size: 0.77rem;
+  }
+  /* remove copyright text from footer and center logo horizontally */
+  footer span {
+    display: none;
+  }
+  footer img {
+    margin-right: 0;
+  }
+}
